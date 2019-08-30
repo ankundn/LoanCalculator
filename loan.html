@@ -1,14 +1,17 @@
 <html>
     <head>
+        <!--extrnal file containing the stylesheet -->
  <link rel="stylesheet" type="text/css" href="loan.css">
             
         <title>
-
+Loan Calculator
         </title>
     </head>
     <body>
+        <!--div named one containing the left side of the page -->
             <div class = "one">
 <h4><b>Enter Loan Data: </b></h4>
+                <!-- input fields for the left side of the page -->
 <label for = "loan">Amount of the Loan ($):</label>
 <input type="text" id="amount" name="amount" onchange="calculateLoan();"><br><br>
 <label for = "interest">Annual interest (%):</label>
@@ -18,9 +21,11 @@
 <label for = "zip">Zipcode (to find lenders):</label>
 <input type="text" id="zip" name="zip" onchange="calculateLoan();">
 <p><b>Approximate Payments: </b></p>
+                <!--div named class containing the calculate button -->
 <div class = "calc">
 <input type="submit" value="Calculate" onclick="calculateLoan()">
 </div>
+                <!-- output fields when the calculation button is clicked -->
 <span>Monthly Payment: </span>
 $<span id="mp" class="result"></span><br>
 <span>Total Payment: </span>
@@ -30,7 +35,7 @@ $<span id="ti" class="result"></span>
 
             </div>
 
-            
+            <!--div named three containing the contents of the bottom page  -->
 <div class="three">
 <p><b>Sponsors:</b>Apply for your loan with one of these fine lenders: </p>
 <ul>
@@ -38,11 +43,12 @@ $<span id="ti" class="result"></span>
     <li><a href=" "> HTML Credit Union </a></li>
 </ul>
 </div>
-
+            <!--div named two containing the right side of the page -->
             <div class = "two">
                 <p><b>Loan Balance, Cumulative Equity, and Interest Payments </b></p>
                 <img src="loan.PNG" >
             </div>
+        <!-- external script conataining the validation -->
             <script src="loan.js"></script>
     </body>
 </html>
